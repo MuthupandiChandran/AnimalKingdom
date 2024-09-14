@@ -10,10 +10,10 @@ namespace AnimalKingdom.Models
 
         [NotMapped]
         public IFormFile? Photo { get; set; }
-        public string? SavedUrl { get; set; }
+        public string? SavedUrl { get; set; } //Storing The Image Url into SQL Server
 
         [NotMapped]
-        public string? SignedUrl { get; set; }
-        public string? SavedFileName { get; set; }
+        public string? SignedUrl { get; set; } //Storing The Image URL into Google Cloud Server
+        public string? SavedFileName { get; set; } //FileName
     }
 }
